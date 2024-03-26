@@ -1,0 +1,47 @@
+# do not import all endpoints into this module because that uses a lot of memory and stack frames
+# if you need the ability to import all endpoints from this module, import them with
+# from namely_python_sdk.apis.path_to_api import path_to_api
+
+import enum
+
+
+class PathValues(str, enum.Enum):
+    COMPANIES_INFO = "/companies/info"
+    FOLDERS = "/folders"
+    RESOURCES_ID = "/resources/{id}"
+    FOLDERS_ID_RESOURCES = "/folders/{id}/resources"
+    RESOURCES = "/resources"
+    FOLDERS_ID = "/folders/{id}"
+    GROUPS = "/groups"
+    GROUPS_ID = "/groups/{id}"
+    GROUP_TYPES = "/group_types"
+    GROUP_TYPES_ID = "/group_types/{id}"
+    GROUP_TYPES_ID_GROUPS = "/group_types/{id}/groups"
+    TEAMS = "/teams"
+    TEAMS_ID = "/teams/{id}"
+    EVENTS = "/events"
+    EVENTS_ID = "/events/{id}"
+    EVENTS_EVENTID_COMMENTS = "/events/{event-id}/comments"
+    LIKES_EVENT_EVENTID_RECENT = "/likes/event/{event-id}/recent"
+    LIKES_EVENT_COMMENT_COMMENTID_RECENT = "/likes/event_comment/{comment-id}/recent"
+    EVENTS_ID_COMMENTS = "/events/{id}/comments"
+    LIKES_EVENT_ID = "/likes/event/{id}"
+    LIKES_EVENT_COMMENT_COMMENTID = "/likes/event_comment/{comment-id}"
+    EVENTS_EVENTID_COMMENTS_COMMENTID = "/events/{event-id}/comments/{comment-id}"
+    LIKES_EVENT_EVENTID = "/likes/event/{event-id}"
+    JOB_TIERS = "/job_tiers"
+    JOB_TIERS_ID = "/job_tiers/{id}"
+    JOB_TITLES = "/job_titles"
+    JOB_TITLES_ID = "/job_titles/{id}"
+    COUNTRIES = "/countries"
+    COUNTRIES_ID = "/countries/{id}"
+    NOTIFICATIONS = "/notifications"
+    PROFILES_ID_NOTIFICATIONS = "/profiles/{id}/notifications"
+    PROFILES_FIELDS = "/profiles/fields"
+    PROFILES_FIELDS_ID = "/profiles/fields/{id}"
+    PROFILES_FIELDS_SECTIONS = "/profiles/fields/sections"
+    PROFILES_FIELDS_SECTIONS_ID = "/profiles/fields/sections/{id}"
+    PROFILES = "/profiles"
+    PROFILES_ID = "/profiles/{id}"
+    PROFILES_ME = "/profiles/me"
+    REPORTS_ID = "/reports/{id}"
